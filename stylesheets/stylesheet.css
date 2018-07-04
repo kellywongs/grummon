@@ -58,18 +58,6 @@ h1 {
 	display: inline;
 }
 
-#title ul li a {
-	color: #a7a7a7;
-}
-
-#title ul li a:hover {
-	color: #de9cc2;
-	/* on hover it's a sandy kind of pink that should stay consistent with other accent colors */
-}
-
-#title ul li a:active {
-	color: #c088a8;
-}
 
 .hasbullet::after {
 	content: "∙";
@@ -81,6 +69,16 @@ h1 {
 
 a {
 	text-decoration: none;
+	color: #a7a7a7;
+}
+
+a:hover {
+	color: #de9cc2;
+	/* on hover it's a sandy kind of pink that should stay consistent with other accent colors */
+}
+
+a:active {
+	color: #c088a8;
 }
 
 /* aesthetic notes */
