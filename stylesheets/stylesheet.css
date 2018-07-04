@@ -41,7 +41,7 @@ h1 {
 /* navigation links */
 
 #title ul {
-	font-weight: bold;
+	font-weight: normal;
 	font-style: italic;
 	font-size: 20px;
 	
@@ -69,7 +69,6 @@ h1 {
 
 #title ul li a:active {
 	color: #c088a8;
-	/* on hover it's a sandy kind of pink that should stay consistent with other accent colors */
 }
 
 .hasbullet::after {
@@ -91,6 +90,8 @@ a {
 }
 
 .content {
+	
+	max-width: 90%;
 	
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -134,22 +135,64 @@ a {
 }
 
 #text img {
-	max-width: 100%;;
+	max-width: 100%;
 }
 
 /* post-its */
 
 
-.postits img {
+.note {
+	display: inline;
+	
 	width: 20%;
-	min-width: 150px;
+	min-width: 200px;
+}
+
+.note img {
+	
+	width: inherit;
+	min-width: inherit;
 	
 	margin-right: 10px;
 	margin-bottom: 10px;
 	/*background-color: #fcfad9;
 		*/
 	
-	background: linear-gradient(#fcfad9 60%, #ffebed);
+	background: linear-gradient(#fcfad9 50%, #ffebed);
 	background-attachment: fixed;
 	
+}
+
+
+
+/* whiteboard */
+
+.whiteboardNote {
+	
+	margin: 10px;
+	
+	display: inline;
+	position: relative;
+	
+}
+
+.whiteboardNote img {
+	vertical-align: middle; /*OH Y GOD IT WORKED */
+}
+
+.small {
+	width:30%;
+	max-width: 350px;
+}
+
+
+.medium {
+	width: 40%;
+	max-width: 450px;
+}
+
+.large {
+	display: block;
+	width: 80%;
+	max-width: 800px;
 }
